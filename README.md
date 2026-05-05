@@ -6,8 +6,6 @@
 
 *A new paper proposes letting an agent rewrite its own scaffolding round after round…*
 
-![The AHE pipeline links three observable surfaces into one closed loop](images/ahe-pipeline.png)
-
 ---
 
 ## TLDR
@@ -23,6 +21,8 @@ Stop treating the system prompt as your primary optimisation surface. It is the 
 Build the rollback machinery on the assumption that some fraction of every round's edits are silent regressions.
 
 The harness is a portable artefact. It travels across providers. The model is rented. The harness is owned.
+
+![Header Image](images/1*znT1WyZ34563ctEI86_GuA.png)
 
 ---
 
@@ -40,6 +40,9 @@ The harness is a portable artefact. It travels across providers. The model is re
 
 The harness is owned. Structural components like tools, middleware, memory, all are the durable IP.
 
+
+![Header Image](images/1*ipNzZjAJQ9BuyoITyAcr9Q.png)
+
 ---
 
 ## The Setup
@@ -53,6 +56,8 @@ The authors argue the bottleneck for automating that loop is not evolve-agent ca
 Ten iterations. Pass 1 on Terminal-Bench 2 lifts from 69.7% to 77.0%, beating Codex-CLI's hand-crafted harness at 71.9% and the two automated baselines by 4–8 points. Roughly 32 hours of compute.
 
 That is the headline. It is not what kept me thinking about this paper.
+
+![Header Image](images/1*39uhlsN7Hk8_2Nu6kCJqLA.png)
 
 ---
 
@@ -82,6 +87,8 @@ Every harness edit becomes a falsifiable contract between rounds. Not a rational
 
 Most self-improving agent loops today are just rationale loops. AHE forces the prediction to be specific before the next evaluation runs, so the agent cannot quietly retcon what an edit was supposed to do.
 
+![Header Image](images/1*Wmvsmamh_W5msOZOmdQd9Q.png)
+
 ---
 
 ## The Limit Of Self-Improving Agents
@@ -95,6 +102,9 @@ This is the load-bearing finding. Agents have an optimism asymmetry.
 They can argue forward, here is why this should help. They cannot argue defensively, here is what this might quietly break.
 
 Same blind spot we see in code review with LLMs, in self-critique loops, in reflection prompts. Until we have an evolve agent that can argue against its own edit, self-improvement loops will keep paying the regression tax.
+
+
+![Header Image](images/1*-v3oGusthipbcWzli5UTdg.png)
 
 ---
 
