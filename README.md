@@ -1,3 +1,5 @@
+![Header Image](images/1*znT1WyZ34563ctEI86_GuA.png)
+
 # Auto Agentic Harness Engineering
 
 ## The Agent Harness Is Where Coding-Agent Gains Actually Live
